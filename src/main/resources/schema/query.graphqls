@@ -1,0 +1,24 @@
+type Query{
+    firstQuery: String
+    secondQuery: String
+    fullName(sampleRequest: SampleRequest): String
+    response : SampleResponse
+    profile : MykpProfile
+}
+
+input SampleRequest {
+    firstName: String
+    lastName: String
+}
+
+type SampleResponse{
+    firstName: String!
+    lastName: String
+}
+
+type MykpProfile{
+    name: String
+    nuId: String
+    employeeId: String
+    managerName: String
+}
